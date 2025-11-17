@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.section {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.completed {
+  color: green;
+}
+.reading {
+  color: orange;
+}
+.toRead {
+  color: red;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.list li {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+}
+
+.list li:nth-child(odd) {
+  background-color: pink;
+}
+
+.list li:nth-child(even) {
+  background-color: beige;
+}
