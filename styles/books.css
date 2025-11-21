@@ -1,99 +1,108 @@
 .section {
-  font-size: 24px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .completed {
-  color: green;
-  padding-left: 10px;
+    color: green;
+    padding-left: 10px;
 }
+
 .reading {
-  color: orange;
-  padding-left: 10px;
+    color: orange;
+    padding-left: 10px;
 }
+
 .to-read {
-  color: red;
-  padding-left: 10px;
+    color: red;
+    padding-left: 10px;
+}
+
+#completed,
+#current,
+#toread {
+    padding-top: 30px;
+    margin-bottom: 20px;
+
 }
 
 .completed-section {
-  margin-bottom: 20px;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 .current-section {
-  margin-bottom: 20px;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
 .to-read-section {
-  margin-bottom: 20px;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
+
 .hide-scroll::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .books-row {
-  display: flex;
-  height: 270px;
-  align-items: center;
-  gap: 100px;
-  width: fit-content;
-  padding-bottom: 10px;
-  margin-left: 20px;
+    display: flex;
+    height: 270px;
+    align-items: center;
+    gap: 100px;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-left: 20px;
 }
 
 .book-container {
-  position: relative;
-  height: 220px;
-  width: 140px;
+    position: relative;
+    height: 220px;
+    width: 140px;
 }
 
 .book-cover {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  text-align: center;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
-  position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    position: absolute;
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  color: white;
-  opacity: 0;
-  transition: 0.4s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    opacity: 0;
+    transition: 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .book-container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
