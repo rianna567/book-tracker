@@ -1,7 +1,13 @@
-@import url("./navbar.css");
 @import url("./books.css");
 
 body {
-  font-family: cursive;
   margin: 0;
+  font-family: "Comic Neue", cursive;
+  font-style: normal;
+}
+
+h2,
+.nav-link,
+.navbar-brand {
+  font-weight: 700;
 }
