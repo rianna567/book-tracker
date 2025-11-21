@@ -7,8 +7,18 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
-    <h1 class="title">My book tracker</h1>
-    <section class="completed-section hide-scroll" >
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">My books</button>
+        <div class="dropdown-content">
+          <a href="#completed">Completed</a>
+          <a href="#current">Currently reading</a>
+          <a href="#toread">To be read</a>
+        </div>
+      </div>
+    </div>
+    <section id="completed" completed-section hide-scroll">
       <h2 class="section completed">Completed reading</h2>
 
       <div class="books-row">
@@ -41,11 +51,7 @@
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/love.jpg"
-            class="book-cover"
-            alt="Twisted love"
-          />
+          <img src="./images/love.jpg" class="book-cover" alt="Twisted love" />
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
@@ -57,11 +63,7 @@
           <div class="overlay">Rating<br />5/5</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/hate.jpg"
-            class="book-cover"
-            alt="Twisted hate"
-          />
+          <img src="./images/hate.jpg" class="book-cover" alt="Twisted hate" />
           <div class="overlay">Rating<br />4/5</div>
         </div>
         <div class="book-container">
@@ -78,7 +80,7 @@
             class="book-cover"
             alt="It ends with us"
           />
-          <div class="overlay">Rating<br />4/5</div>
+          <div class="overlay">Rating<br />1/5</div>
         </div>
         <div class="book-container">
           <img
@@ -86,7 +88,7 @@
             class="book-cover"
             alt="It starts with us"
           />
-          <div class="overlay">Rating<br />4/5</div>
+          <div class="overlay">Rating<br />2/5</div>
         </div>
         <div class="book-container">
           <img
@@ -112,11 +114,10 @@
           />
           <div class="overlay">Rating<br />5/5</div>
         </div>
-                
       </div>
     </section>
 
-    <section class="current-section hide-scroll">
+    <section id="current" class="current-section hide-scroll">
       <h2 class="section reading">Currently reading</h2>
       <div class="books-row">
         <div class="book-container">
@@ -130,7 +131,7 @@
       </div>
     </section>
 
-    <section class="to-read-section hide-scroll">
+    <section id="toread" class="to-read-section hide-scroll">
       <h2 class="section to-read">To be read</h2>
       <div class="books-row">
         <div class="book-container">
@@ -158,11 +159,11 @@
           <div class="overlay">Status<br />To get</div>
         </div>
         <div class="book-container">
-          <img
-            src="./images/lies.jpg"
-            class="book-cover"
-            alt="Twisted lies"
-          />
+          <img src="./images/lies.jpg" class="book-cover" alt="Twisted lies" />
+          <div class="overlay">Status<br />Bought</div>
+        </div>
+        <div class="book-container">
+          <img src="./images/five.jpg" class="book-cover" alt="Five Survive" />
           <div class="overlay">Status<br />Bought</div>
         </div>
       </div>
