@@ -1,55 +1,37 @@
-.section {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.completed {
-    color: green;
-    padding-left: 10px;
-}
-
-.reading {
-    color: orange;
-    padding-left: 10px;
-}
-
-.to-read {
-    color: red;
-    padding-left: 10px;
-}
-
 #completed,
 #current,
-#toread {
+#to-read {
     padding-top: 30px;
     margin-bottom: 20px;
+}
+
+.completed-title,
+.reading-title,
+.to-read-title {
+    padding-left: 10px;
+    font-size: 24px;
 
 }
 
-.completed-section {
-    overflow-x: scroll;
-    display: flex;
-    flex-direction: column;
+.completed-title {
+    color: green;
 }
 
-.current-section {
-    margin-bottom: 20px;
-    overflow-x: scroll;
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+.reading-title {
+    color: orange;
 }
 
-.to-read-section {
-    margin-bottom: 20px;
+.to-read-title {
+    color: red;
+}
+
+
+.completed-div,
+.current-div,
+.to-read-div {
     overflow-x: scroll;
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
 }
 
 .hide-scroll::-webkit-scrollbar {
@@ -80,7 +62,7 @@
     width: 140px;
 }
 
-.book-cover {
+.book-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -98,6 +80,7 @@
     opacity: 0;
     transition: 0.4s ease;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
