@@ -1,8 +1,12 @@
 #completed,
 #current,
 #to-read {
-    padding-top: 30px;
+    padding-top: 0;
     margin-bottom: 20px;
+}
+
+#completed {
+    padding-top: 30px;
 }
 
 .completed-title,
@@ -48,7 +52,7 @@
 
 .books-row {
     display: flex;
-    height: 270px;
+    height: 300px;
     align-items: center;
     width: fit-content;
     padding-bottom: 10px;
