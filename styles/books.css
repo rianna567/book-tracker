@@ -50,16 +50,17 @@
     display: flex;
     height: 270px;
     align-items: center;
-    gap: 100px;
     width: fit-content;
     padding-bottom: 10px;
     margin-left: 20px;
+    gap: 20px;
 }
 
 .book-container {
     position: relative;
     height: 220px;
     width: 140px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .book-container img {
@@ -68,7 +69,6 @@
     object-fit: cover;
     display: block;
     text-align: center;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     position: absolute;
 }
 
@@ -88,4 +88,23 @@
 
 .book-container:hover .overlay {
     opacity: 1;
+}
+
+
+/* for screen sizes above 720px */
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    .books-row {
+        gap: 40px;
+    }
+}
+
+/* for screen sized above 720px */
+@media screen and (min-width: 721px) {
+    .books-row {
+        gap: 100px;
+    }
+
+    .book-container {
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    }
 }
